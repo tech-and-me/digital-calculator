@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/digital-calculator/static/css/main.b429a87d.css",
+    "main.js": "/digital-calculator/static/js/main.42e38bd3.js",
+    "index.html": "/digital-calculator/index.html",
+    "main.b429a87d.css.map": "/digital-calculator/static/css/main.b429a87d.css.map",
+    "main.42e38bd3.js.map": "/digital-calculator/static/js/main.42e38bd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b429a87d.css",
+    "static/js/main.42e38bd3.js"
+  ]
+}
