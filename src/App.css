@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+:root{
+  --main-color:rgb(29, 43, 39);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color:rgb(92, 217, 226);
+  background-color: rgb(172, 126, 179);
+  padding: 0.9rem 2.4rem;
+  border-radius: 20px;
+  font-size:2.5rem;
+  box-shadow: -4px 4px 5px rgb(194, 188, 188);
+  border: 1px white solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper {
+background-color: rgb(152, 224, 224);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.mainParent {
+width: 350px;
+background-color: rgb(203, 170, 212);
+padding: 1rem;
+border-radius: 10px;
+box-shadow: -4px 4px 5px rgb(112, 106, 106);
+font-weight: bolder;
+margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Result section    */
+.result {
+border: 1px solid rgb(207, 194, 194);
+border-radius: 10px;
+padding: 1rem;
+font-weight: bolder;
+box-shadow: -4px 4px 2px rgb(73, 67, 67);
+display: flex;
+justify-content: flex-end;
+overflow: hidden;
+height: 40px;
+background-color: ;
+}
+
+
+/* Button Area  */
+.items {
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+display: grid;
+gap: 1rem;
+grid-template-columns: repeat(4, 1fr);
+grid-template-areas: 
+  "clear clean divide multi"
+  "no-7 no-8 no-9 plus"
+  "no-4 no-5 no-6 minus"
+  "no-1 no-2 no-3 ans"
+  "dot no-0 no-0 ans"
+}
+
+.items > button{
+  cursor: pointer;
+  min-height: 70px;
+  box-shadow: -4px 4px 2px rgb(151, 143, 143);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color:var(--main-color);
+  background: rgb(221, 213, 213);
+  border: none;
+  border-radius: 4px;
+}
+
+.items > button:hover{
+  background-color: rgb(138, 110, 143);
+}
+
+.clear {
+grid-area: clear;
+}
+
+.clean {
+grid-area: clean;
+}
+
+.divide {
+grid-area: divide;
+}
+
+.multi {
+grid-area: multi;
+}
+
+.plus {
+grid-area: plus;
+}
+
+.minus {
+grid-area: minus;
+}
+
+.no-9 {
+grid-area: no-9;
+}
+
+.no-8 {
+grid-area: no-8;
+}
+
+.no-7 {
+grid-area: no-7;
+}
+
+.no-6 {
+grid-area: no-6;
+}
+
+.no-5 {
+grid-area: no-5;
+}
+
+.no-4 {
+grid-area: no-4;
+}
+
+.no-3 {
+grid-area: no-3;
+}
+
+.no-2 {
+grid-area: no-2;
+}
+
+.no-1 {
+grid-area: no-1;
+}
+
+.no-0 {
+grid-area: no-0;
+}
+
+.dot {
+grid-area: dot;
+}
+
+.ans {
+grid-area: ans;
 }
